@@ -1,0 +1,41 @@
+--------------------------------------------------------
+--  File created - Tuesday-October-09-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table MENUTYPE
+--------------------------------------------------------
+
+  CREATE TABLE "MANAN"."MENUTYPE" 
+   (	"RID" VARCHAR2(4 BYTE), 
+	"MTYPE" VARCHAR2(50 BYTE), 
+	"MTYPENAME" VARCHAR2(50 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into MANAN.MENUTYPE
+SET DEFINE OFF;
+Insert into MANAN.MENUTYPE (RID,MTYPE,MTYPENAME) values ('1000','starters','starters');
+Insert into MANAN.MENUTYPE (RID,MTYPE,MTYPENAME) values ('1000','mains','mains');
+Insert into MANAN.MENUTYPE (RID,MTYPE,MTYPENAME) values ('1000','breads','indian accent bread bar');
+Insert into MANAN.MENUTYPE (RID,MTYPE,MTYPENAME) values ('1000','sides','sides');
+Insert into MANAN.MENUTYPE (RID,MTYPE,MTYPENAME) values ('1000','desserts','desserts');
+--------------------------------------------------------
+--  DDL for Index SYS_C007211
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "MANAN"."SYS_C007211" ON "MANAN"."MENUTYPE" ("MTYPE") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  Constraints for Table MENUTYPE
+--------------------------------------------------------
+
+  ALTER TABLE "MANAN"."MENUTYPE" ADD PRIMARY KEY ("MTYPE")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;

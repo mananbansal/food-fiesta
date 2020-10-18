@@ -1,0 +1,45 @@
+--------------------------------------------------------
+--  File created - Tuesday-October-09-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table RESTREGISTRATION
+--------------------------------------------------------
+
+  CREATE TABLE "MANAN"."RESTREGISTRATION" 
+   (	"RID" NUMBER(10,0), 
+	"RNAME" VARCHAR2(100 BYTE), 
+	"RADDRESS" VARCHAR2(1000 BYTE), 
+	"RAREA" VARCHAR2(200 BYTE), 
+	"RDESC" VARCHAR2(2000 BYTE), 
+	"PNAME" VARCHAR2(200 BYTE), 
+	"COTACTNO" VARCHAR2(10 BYTE), 
+	"EMAIL" VARCHAR2(100 BYTE), 
+	"PASSWORD" VARCHAR2(100 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into MANAN.RESTREGISTRATION
+SET DEFINE OFF;
+Insert into MANAN.RESTREGISTRATION (RID,RNAME,RADDRESS,RAREA,RDESC,PNAME,COTACTNO,EMAIL,PASSWORD) values (1000,'Indian Ancent','The Lodhi, Lodhi Rd, CGO Complex, Pragati Vihar, New Delhi','new Delhi','Indian Accent showcases inventive Indian cuisine by complementing the flavours and traditions of India with global ingredients and techniques.
+','manan','7056031111','indianancent@gmail.com','icsd');
+Insert into MANAN.RESTREGISTRATION (RID,RNAME,RADDRESS,RAREA,RDESC,PNAME,COTACTNO,EMAIL,PASSWORD) values (2000,'Masala House',' Market 4, Sundar Nagar, New Delhi','delhi','Masala House introduces an amalgamation of culinary finesse with gracious service. The surprising array of aromatic dishes, slow cooked in sealed pots with handpicked masalas, imparts a delicate yet alchemical infusion of flavors and textures.','manan','7056031111','masalahouse@gmail.com','icsd');
+--------------------------------------------------------
+--  DDL for Index SYS_C007251
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "MANAN"."SYS_C007251" ON "MANAN"."RESTREGISTRATION" ("EMAIL") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  Constraints for Table RESTREGISTRATION
+--------------------------------------------------------
+
+  ALTER TABLE "MANAN"."RESTREGISTRATION" ADD PRIMARY KEY ("EMAIL")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;

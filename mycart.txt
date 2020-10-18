@@ -1,0 +1,26 @@
+--------------------------------------------------------
+--  File created - Tuesday-October-09-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table MYCART
+--------------------------------------------------------
+
+  CREATE TABLE "MANAN"."MYCART" 
+   (	"UNAME" VARCHAR2(50 BYTE), 
+	"RID" VARCHAR2(10 BYTE), 
+	"MID" VARCHAR2(10 BYTE), 
+	"MNAME" VARCHAR2(2000 BYTE), 
+	"MPRICE" VARCHAR2(10 BYTE), 
+	"MQTY" VARCHAR2(10 BYTE), 
+	"MIMG" VARCHAR2(100 BYTE), 
+	"RNAME" VARCHAR2(2000 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into MANAN.MYCART
+SET DEFINE OFF;
+Insert into MANAN.MYCART (UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME) values ('niket@gmail.com','1000','1001','beet and peanut butter chop, kasundi, goat cheese raita','600','1','menu1001.jpg','Indian Ancent');
+Insert into MANAN.MYCART (UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME) values ('sahilkhatter22@gmail.com','1000','1001','beet and peanut butter chop, kasundi, goat cheese raita','600','1','menu1001.jpg','Indian Ancent');
+Insert into MANAN.MYCART (UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME) values ('sahilkhatter22@gmail.com','1000','1005','atta and semolina puchkas, calcuttajhal potato, five waters','600','1','Menu1005.jpg','Indian Ancent');

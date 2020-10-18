@@ -1,0 +1,33 @@
+--------------------------------------------------------
+--  File created - Tuesday-October-09-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table TBLRESTORDER
+--------------------------------------------------------
+
+  CREATE TABLE "MANAN"."TBLRESTORDER" 
+   (	"BILLNO" VARCHAR2(10 BYTE), 
+	"UNAME" VARCHAR2(50 BYTE), 
+	"RID" VARCHAR2(10 BYTE), 
+	"MID" VARCHAR2(10 BYTE), 
+	"MNAME" VARCHAR2(2000 BYTE), 
+	"MPRICE" VARCHAR2(10 BYTE), 
+	"MQTY" VARCHAR2(5 BYTE), 
+	"MIMG" VARCHAR2(50 BYTE), 
+	"RNAME" VARCHAR2(100 BYTE), 
+	"ADDRESS" VARCHAR2(2000 BYTE), 
+	"AREA" VARCHAR2(100 BYTE), 
+	"PIN" VARCHAR2(6 BYTE), 
+	"CONTACT" VARCHAR2(10 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into MANAN.TBLRESTORDER
+SET DEFINE OFF;
+Insert into MANAN.TBLRESTORDER (BILLNO,UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME,ADDRESS,AREA,PIN,CONTACT) values ('14','mananbansal143@gmail.com','1000','1001','beet and peanut butter chop, kasundi, goat cheese raita','600','1','menu1001.jpg','Indian Ancent','#396, TDI City','delhi','132103','4444444');
+Insert into MANAN.TBLRESTORDER (BILLNO,UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME,ADDRESS,AREA,PIN,CONTACT) values ('13','mananbansal143@gmail.com','1000','1001','beet and peanut butter chop, kasundi, goat cheese raita','600','1','menu1001.jpg','Indian Ancent','#396, TDI City','delhi','132103','7056031111');
+Insert into MANAN.TBLRESTORDER (BILLNO,UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME,ADDRESS,AREA,PIN,CONTACT) values ('11','mananbansal143@gmail.com','1000','1008','pomelo segments, tamarind glaze, golden nuts','800','1','menu1008.jpg','Indian Ancent','#396, TDI City','delhi','132103','7056031111');
+Insert into MANAN.TBLRESTORDER (BILLNO,UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME,ADDRESS,AREA,PIN,CONTACT) values ('11','mananbansal143@gmail.com','1000','1039','traditional indian breads, Roti/ Naan/ Parantha','155','1','menu1039.jpg','Indian Ancent','#396, TDI City','delhi','132103','7056031111');
+Insert into MANAN.TBLRESTORDER (BILLNO,UNAME,RID,MID,MNAME,MPRICE,MQTY,MIMG,RNAME,ADDRESS,AREA,PIN,CONTACT) values ('11','mananbansal143@gmail.com','1000','1054','chef’s dessert platter','1855','1','menu1054.jpg','Indian Ancent','#396, TDI City','delhi','132103','7056031111');

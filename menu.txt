@@ -1,0 +1,85 @@
+--------------------------------------------------------
+--  File created - Tuesday-October-09-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table MENU
+--------------------------------------------------------
+
+  CREATE TABLE "MANAN"."MENU" 
+   (	"RID" VARCHAR2(20 BYTE), 
+	"MID" VARCHAR2(20 BYTE), 
+	"MTYPE" VARCHAR2(20 BYTE), 
+	"MNAME" VARCHAR2(2000 BYTE), 
+	"MDESC" VARCHAR2(2000 BYTE), 
+	"MCLASS" VARCHAR2(20 BYTE), 
+	"MPRICE" NUMBER(7,2), 
+	"MIMG" VARCHAR2(30 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into MANAN.MENU
+SET DEFINE OFF;
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1001','starters','beet and peanut butter chop, kasundi, goat cheese raita',' ','veg',600,'menu1001.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1002','starters','potato sphere choat, white pea ragda',' ','veg',600,'menu1002.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1003','starters','pulled kathalphulka taco',' ','veg',400,'menu1003.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1004','starters','pepper paneer cornet,smoked paped',' ','veg',600,'menu1004.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1005','starters','atta and semolina puchkas, calcuttajhal potato, five waters',' ','veg',600,'Menu1005.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1006','starters','panko crusted bharwanmirch, goat cheese mousse, chilliaampapad chutney',' ','veg',700,'menu1006.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1007','starters','tofu meduvadai, lime leaf gun powder, onion chutney',' ','veg',600,'menu1007.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1008','starters','pomelo segments, tamarind glaze, golden nuts',' ','veg',800,'menu1008.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1009','starters','fresh buratta, chashninadroo, anardana tomato jam',' ','veg',1050,'menu1009.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1010','starters','Kashmiri morel musallum, parmesan papad',' ','veg',1150,'menu1010.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1011','starters','ghee roast soya boti, roomali roti pancake, chutneys',' ','veg',1550,'menu1011.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1012','starters','chicken khurchanphulka taco',' ','non-veg',500,'menu1012.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1020','mains','jackfruit and potato podimas, coconut curry',' ','veg',800,'menu1020.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1021','mains','tadka vegetables, baby spanich and roasted sesame salan',' ','veg',800,'menu1021.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1022','mains','tempered ricotta vada, paobhaji, kafir lime butter pao (chowpatty in a bowl)',' ','veg',800,'menu1022.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1023','mains','baked paneer, smoked eggplant, winter green peas',' ','veg',800,'menu1023.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1024','mains','sarsonkasaag, white butter corn, makhani',' ','veg',800,'menu1024.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1025','mains','masala wild mushrooms, water chestnut, paper roast dasai',' ','veg',1175,'menu1025.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1026','mains','chicken kofta, punjabikadhi, onion pakoda, greens',' ','non-veg',1200,'menu1026.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1027','mains','chettinad chicken keema, curry leaf lemon seviyan, sago puffs',' ','non-veg',1200,'menu1027.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1028','mains','butter scallops, rawa prawns, malwani pulao, kokum curry',' ','non-veg',1500,'menu1028.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1029','mains','park belly tikka, Punjabi lobhia curry, smoked pappad',' ','non-veg',1500,'menu1029.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1032','breads','wild mashroomkulcha, truffle oil drizzle',' ','veg',425,'menu1032.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1033','breads','roast pumpkin and cheddar kulcha',' ','veg',425,'menu1033.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1034','breads','cauliflower churchur paratha',' ','veg',425,'menu1034.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1035','breads','onion and herb roti',' ','veg',425,'menu1035.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1036','breads','butter chicken kulcha',' ','non-veg',450,'menu1036.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1037','breads','chillihoisin duck kulcha',' ','non-veg',450,'menu1037.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1038','breads','applewood smoked bacon kulcha',' ','non-veg',450,'menu1038.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1039','breads','traditional indian breads, Roti/ Naan/ Parantha',' ','non-veg',155,'menu1039.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1040','sides','steamed basmati rice',' ','veg',450,'menu1040.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1041','sides','guchi pine nut pulao',' ','veg',1075,'menu1041.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1042','sides','anaar and avocado raita',' ','veg',450,'menu1042.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1043','sides','black dairy dal',' ','veg',850,'menu1043.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1044','sides','dal maradabadi',' ','veg',850,'menu1044.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1046','desserts','winter carrot halwa crumble, fig and whisky ice cream',' ','veg',6000,'menu1046.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1047','desserts','kheer, crispy seviyan, coconut and jaggery ice cream, berries',' ','veg',675,'menu1047.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1048','desserts','daulatkichaat, roast almond, rose petal chikki',' ','veg',675,'menu1048.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1049','desserts','mishit dai cannoli, papped amaranth',' ','veg',675,'menu1049.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1050','desserts','mishtidoi cannoli, papped amaranth',' ','veg',675,'menu1050.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1051','desserts','besanladoo tart, mithai cheesecake, fresh fruits',' ','veg',675,'menu1051.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1052','desserts','old monk rum ball, 70% valrhona chocolate',' ','veg',675,'menu1052.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1053','desserts','warm daba burfi treacle tart, homemade vanilla bean ice cream',' ','veg',675,'menu1053.jpg');
+Insert into MANAN.MENU (RID,MID,MTYPE,MNAME,MDESC,MCLASS,MPRICE,MIMG) values ('1000','1054','desserts','chef’s dessert platter',' ',' ',1855,'menu1054.jpg');
+--------------------------------------------------------
+--  DDL for Index SYS_C007265
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "MANAN"."SYS_C007265" ON "MANAN"."MENU" ("MID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  Constraints for Table MENU
+--------------------------------------------------------
+
+  ALTER TABLE "MANAN"."MENU" ADD PRIMARY KEY ("MID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;

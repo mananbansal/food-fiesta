@@ -1,0 +1,49 @@
+--------------------------------------------------------
+--  File created - Tuesday-October-09-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table RESTAURANT
+--------------------------------------------------------
+
+  CREATE TABLE "MANAN"."RESTAURANT" 
+   (	"RID" VARCHAR2(20 BYTE), 
+	"RNAME" VARCHAR2(50 BYTE), 
+	"RDESC" VARCHAR2(2000 BYTE), 
+	"RLOGO" VARCHAR2(100 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into MANAN.RESTAURANT
+SET DEFINE OFF;
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('1000','Indian Ancent','Indian Accent showcases inventive Indian cuisine by complementing the flavours and traditions of India with global ingredients and techniques.','rest1.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('2000','Masala House','Masala House introduces an amalgamation of culinary finesse with gracious service. The surprising array of aromatic dishes, slow cooked in sealed pots with handpicked masalas, imparts a delicate yet alchemical infusion of flavors and textures.','rest2.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('3000','ITC Maurya','Dum Pukht, a process of slow-cooking in a sealed ‘handi’, allows the ingredients to mature in their own juices to bring out the intense flavours, aromas and leisurely luxury of the food, imbuing it with richness that distinguishes the cuisine. ','rest3.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('4000','San Gimignano',' In an endeavour to present only the best, San Gimignano sources the finest of balsamic vinegar, cheeses, pasta, risotto and olive oils. The restaurant boasts a premium selection of Italian wines and grappa that are a perfect match to the thoughtfully created menu.','rest4.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('5000','Orient Express','Enjoy a romantic European dining experience in a truly unique and enchanting setting!','rest5.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('6000','Neung Roi','The menu is inspired by the four regions of Thailand—the northeastern Isan, the northern Lanna, the Central Plains and the southern Kra Isthmus. Patrons journey through these regions with their taste buds, sampling diverse cuisine like porpia sod, chormuang, gai kraprow and gaeng bpa ped','rest6.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('7000','ThreeSixty!','The menu is an eclectic mix of signature dishes from the main culinary regions of the world; authentic Thai, the freshest and finest sushi, grilled delicacies cooked in live show kitchens, wood fired pizzas and high tea in the lounge. Enoteca, the neighbouring wine cellar, is ideally suited to offer guided wine tastings.','rest7.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('8000','Tandoor N Grillz','We take immense pride in our spices created daily to accentuate our range of dishes. We mix, roast and grind spices and herbs daily to create the diverse flavours that our patrons love to enjoy. We are committed to the use of the freshest ingredients down to our lemons that are freshly squeezed daily for maximum flavour.','rest8.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('9000','Gulati Restaurant','With an extensive and lavish menu spread over a hundred and seventy five exotic recipes, it is a discerning foodie’s delight!','rest9.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('10000','ARTUSI Ristorante','There are no twists, no fusion, and no short-cuts at ARTUSI RISTORANTE','rest10.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('11000','Spicy Duck',' Spicy Duck retains authenticity and manifests luxury.A central feature to Chinese cuisine for centuries, the Duck signifies freedom, happiness and fidelity in China, capturing contemporary vibrancy with authenticity. Most of the ingredients are sourced from China to keep the offerings authentic.','rest11.jpg');
+Insert into MANAN.RESTAURANT (RID,RNAME,RDESC,RLOGO) values ('12000','Dubai Dining','We got mouthwatering dishes to tantalising mix of food from Indian to Italian, Afghani, Chinese, Turkish cooked by the best of the Chef’s in business and to add on to it we got the best of mix for the cocktail to mocktail to be offered from the finest bartenders who makes and shakes them with precision.','rest12.jpg');
+--------------------------------------------------------
+--  DDL for Index SYS_C007180
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "MANAN"."SYS_C007180" ON "MANAN"."RESTAURANT" ("RID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  Constraints for Table RESTAURANT
+--------------------------------------------------------
+
+  ALTER TABLE "MANAN"."RESTAURANT" ADD PRIMARY KEY ("RID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;
